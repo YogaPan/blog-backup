@@ -60,8 +60,8 @@ $ hexo server
 再繼續往下看以前，我們先來暸解整個目錄結構:
 ```sh
 blog/
-  _config.yml.           -> 最主要的設定檔
-  package.json.          -> 相依套件列表
+  _config.yml            -> 最主要的設定檔
+  package.json           -> 相依套件列表
   node_modules/          -> 相依套件
   public/                -> 生成的靜態網站資源
   source/
