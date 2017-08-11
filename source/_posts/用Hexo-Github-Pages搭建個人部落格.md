@@ -3,6 +3,7 @@ title: 用Hexo + Github Pages搭建個人部落格
 date: 2017-08-11 20:27:17
 tags:
   - hexo
+  - blog
 ---
 
 ## 什麼是Hexo？
@@ -16,6 +17,8 @@ Hexo的特色:
 * 140幾種網站主題可供選擇
 * 多種插件，可以加入[disqus](https://disqus.com/)討論功能和瀏覽人數計數等功能
 * 輕易部署到[Github Pages](https://pages.github.com)和[Heroku](https://www.heroku.com/)
+
+<!--more-->
 
 - - - -
 ## 安裝Hexo
