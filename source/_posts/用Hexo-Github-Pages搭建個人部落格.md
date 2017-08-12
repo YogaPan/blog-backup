@@ -407,12 +407,93 @@ $ hexo deploy
 https://hexo.io/docs/deployment.html
 
 - - - -
-## 加入Disqus留言功能
-https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E7%BD%AE%E5%A4%9A%E8%AF%B4-DISQUS
+## 文章預覽
+可以根據字數來裁切預覽，在`themes/next/_config.yml`中:
+```yml
+auto_excerpt:
+  enable: true
+  length: 150
+```
+但是不推薦此功能。
 
-- - - -
+更好的方法是在文章中用`<!--more-->`來做斷點，`<!--more-->`以上的部分就是預覽會顯示的部分:
+```md
+預覽看得到我
+<!--more-->
+預覽看不到我
+```
+
+這樣文章預覽的部分就完成了！
+{% asset_img 19.png %}
+
+---
+## 閱讀人數統計
+這裡我們使用LeanCloud的服務，先去註冊一組帳號:
+https://leancloud.cn/
+
+Email認證完後，點擊右上角訪問控制台，並且創建一個新的應用
+{% asset_img 20.png %}
+
+接著創建一個新的class叫做`Counter`
+{% asset_img 21.png %}
+
+
+接著到`設置 -> 應用key`頁面，複製`App ID`和`App Key`到`themes/next/_config.yml`中
+```yml
+leancloud_visitors:
+  enable: true
+  app_id: <your-id>
+  app_key: <your-key>
+```
+
+完成後部署上去，就可以看到閱讀次數囉！
+{% asset_img 22.png %}
+
+更詳細的教學可以看這裡：
+[为NexT主题添加文章阅读量统计功能 | Doublemine](https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html)
+
+---
+## 加入Disqus留言功能
+我們可以利用[Disqus](https://disqus.com/)來達到留言互動的的功能，先註冊一組帳密：
+{% asset_img 23.png %}
+
+選擇I want to install Disqus on my site
+{% asset_img 24.png %}
+
+填入`Website Name`
+{% asset_img 25.png %}
+
+完成後在`themes/next/_config.yml`填入妳的website name
+```yml
+disqus:
+  enable: true
+  shortname: <your-website-name>
+  count: true
+```
+
+大功告成
+{% asset_img 26.png %}
+
+更詳細可以參考這裡：
+http://www.jianshu.com/p/c4f65ebe23ad
+
+---
 ## RSS訂閱
-TODO
+安裝相依套件
+```sh
+$ yarn add hexo-generator-feed
+```
+
+在`_config.yml`加入
+```yml
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+```
+
+登登！
+{% asset_img 27.png %}
 
 - - - -
 ## Hexo指令備忘錄
