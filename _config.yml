@@ -80,3 +80,10 @@ deploy:
   type: git
   repo: https://github.com/yogapan/yogapan.github.io
   branch: master
+
+# Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
