@@ -474,6 +474,12 @@ disqus:
 大功告成
 {% asset_img 26.png %}
 
+預設會在所有page上加入評論系統。如果不要開啟評論系統的話，在開頭加上:
+```md
+comments: false
+---
+```
+
 更詳細可以參考這裡：
 http://www.jianshu.com/p/c4f65ebe23ad
 
@@ -494,6 +500,66 @@ feed:
 
 登登！
 {% asset_img 27.png %}
+
+---
+## Google SEO
+### 獲取 Google Site Verification Code
+登入[Google Search Console](https://www.google.com/webmasters/tools/home?hl=zh-TW)，點選新增內容，填入你的網址:
+{% asset_img 28.png %}
+
+驗證方法選擇`其他方式` -> `HTML Tag`，獲得以以下驗證碼
+```html
+<meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX" />
+```
+{% asset_img 29.png %}
+
+在`themes/next/_config.yml`中填入驗證碼
+```yml
+google_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
+```
+
+接著就可以看到網頁搜索的資訊了
+{% asset_img 30.png %}
+{% asset_img 31.png %}
+
+### 提交sitemap
+安裝`hexo-sitemap-generator`
+```sh
+$ yarn add hexo-generator-sitemap
+```
+
+在`_config.yml`中
+```yml
+sitemap:
+  path: sitemap.xml
+```
+
+並且填入你的網址
+```yml
+url: https://<yourname>.github.io
+```
+
+產生`sitemap.xml`，並且部署
+```sh
+$ hexo generate
+$ hexo deploy
+```
+
+提交到[Google Search Console](https://www.google.com/webmasters/tools/home?hl=zh-TW)
+{% asset_img 32.png %}
+
+現在Google搜尋能更好的解析網站的結構惹
+{% asset_img 33.png %}
+
+
+關於SEO、Google Search Console、Sitemap參考資料
+* [Google Search Console 初學者指南，如何使用及安裝 | Harris 先生](http://www.yesharris.com/search-console-intro/)
+* [SEO功能優化 Sitemap與Google網站管理員的運用 | Shopline電商教室](https://shopline.tw/blog/new-sitemap-feature-for-ecommerce-stores/)
+
+其他教學
+* [hexo-generator-sitemap 生成的sitemap如何配置自定义的域名？ - dkylin的回答 - SegmentFault](https://segmentfault.com/q/1010000004659915/a-1020000004895702)
+* [Hexo 优化：提交 sitemap 及解决百度爬虫无法抓取 GitHub Pages 链接问题 | JI’s Blog](http://www.yuan-ji.me/Hexo-%E4%BC%98%E5%8C%96%EF%BC%9A%E6%8F%90%E4%BA%A4sitemap%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%99%BE%E5%BA%A6%E7%88%AC%E8%99%AB%E6%8A%93%E5%8F%96-GitHub-Pages-%E9%97%AE%E9%A2%98/)
+* [Hexo Seo优化让你的博客在google搜索排名第一 | 一个人胡闹的日子](http://hunao.info/2016/06/01/Hexo-Seo%E4%BC%98%E5%8C%96%E8%AE%A9%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%9C%A8google%E6%90%9C%E7%B4%A2%E6%8E%92%E5%90%8D%E7%AC%AC%E4%B8%80/)
 
 - - - -
 ## Hexo指令備忘錄
