@@ -579,8 +579,8 @@ $ hexo deploy
 Q: 為什麼我修改了設定之後，沒有反應出來呢？
 A: 可以重啟server試試看，通常都可以解決問題。
 
-Q: 為什麼部署到Github Page之後網站沒有更新呢
-A: 部署到Github Pages上後可能會有延遲，有時要等個30秒左右才會更新。
+Q: 為什麼部署到Github Page之後網站沒有更新呢？
+A: 有時部署到Github Pages上後可能會有延遲，有時要等個30秒左右才會更新。或者是嘗試`$ hexo clean && hexo deploy`試試看。
 
 - - - -
 ## 參考資料
