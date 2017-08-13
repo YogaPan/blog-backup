@@ -552,11 +552,11 @@ $ hexo deploy
 {% asset_img 33.png %}
 
 
-關於SEO、Google Search Console、Sitemap參考資料
+### 關於SEO、Google Search Console、Sitemap參考資料
 * [Google Search Console 初學者指南，如何使用及安裝 | Harris 先生](http://www.yesharris.com/search-console-intro/)
 * [SEO功能優化 Sitemap與Google網站管理員的運用 | Shopline電商教室](https://shopline.tw/blog/new-sitemap-feature-for-ecommerce-stores/)
 
-其他教學
+### 其他教學
 * [hexo-generator-sitemap 生成的sitemap如何配置自定义的域名？ - dkylin的回答 - SegmentFault](https://segmentfault.com/q/1010000004659915/a-1020000004895702)
 * [Hexo 优化：提交 sitemap 及解决百度爬虫无法抓取 GitHub Pages 链接问题 | JI’s Blog](http://www.yuan-ji.me/Hexo-%E4%BC%98%E5%8C%96%EF%BC%9A%E6%8F%90%E4%BA%A4sitemap%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%99%BE%E5%BA%A6%E7%88%AC%E8%99%AB%E6%8A%93%E5%8F%96-GitHub-Pages-%E9%97%AE%E9%A2%98/)
 * [Hexo Seo优化让你的博客在google搜索排名第一 | 一个人胡闹的日子](http://hunao.info/2016/06/01/Hexo-Seo%E4%BC%98%E5%8C%96%E8%AE%A9%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%9C%A8google%E6%90%9C%E7%B4%A2%E6%8E%92%E5%90%8D%E7%AC%AC%E4%B8%80/)
