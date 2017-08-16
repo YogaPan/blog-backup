@@ -29,8 +29,8 @@ tags:
 <!--more-->
 
 而且更猛的是，他不只可以下載Youtube的影片，甚至連Facebook、Twitter、Xuite上的影片都可以下載！
--我絕對不會告訴你連Pornhub上的影片都可以輕鬆下載-
--但是前提是你要會用Command Line啦，呵呵-
+~~我絕對不會告訴你連Pornhub上的影片都可以輕鬆下載~~
+~~但是前提是你要會用Command Line啦，呵呵~~
 
 所有支援下載的網站清單:
 https://github.com/rg3/youtube-dl/blob/master/docs/supportedsites.md
