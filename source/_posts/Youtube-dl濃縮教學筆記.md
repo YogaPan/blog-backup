@@ -173,7 +173,7 @@ $ youtube-dl -o "test.mp4" -f mp4 <url>
 
 假如說我覺得影片id很煩很醜，我要把他去掉，只留下影片標題跟副檔名
 ```sh
-$ youtube-dl 0o '%(title)s.%(ext)s'
+$ youtube-dl -o '%(title)s.%(ext)s'
 ```
 
 ### 以下官方範例
